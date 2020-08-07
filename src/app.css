@@ -1,0 +1,121 @@
+.grid {
+    position: relative;
+}
+
+.item {
+    display: block;
+    position: absolute;
+    color: white;
+    z-index: 0;
+}
+
+.item-content {
+    position: relative;
+}
+
+
+.content {
+    padding: 64px;
+}
+
+* {
+    font-family: Helvetica, sans-serif
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    transition-duration: 300ms;
+}
+
+.header {
+    padding-top: 64px;
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-bottom: 32px;
+}
+
+
+.title {
+    color: black;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #7e7e7e;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.button-black {
+    color: whitesmoke;
+    background-color: black;
+    border-color: black;
+}
+
+label {
+    padding-left: 84px;
+    padding-right: 84px;
+}
+
+.main {
+    margin-right: 12px;
+}
+
+textarea {
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-bottom: 24px;
+    width: 100%;
+    resize: vertical;
+    min-height: 130px;
+    padding-bottom: 24px;
+    color: black;
+    border-width: 2px;
+    font-size: 16px;
+    font-family: monospace;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+.toggle-dark {
+    border-radius: 50%;
+    background-color: #dfdede;
+    padding: 12px;
+    cursor: pointer;
+    color: black;
+    transition-duration: 340ms;
+}
+
+.toggle-dark:hover {
+    background-color: #cacaca;
+}
+
+
+.card {
+    border-radius: 12px;
+    margin: 12px;
+    width: 96px;
+    height: 96px;
+    transition-duration: 197ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #00000025;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 17px #00000070;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__pulse {
+    --animate-duration: 400ms;
+    --animate-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  }

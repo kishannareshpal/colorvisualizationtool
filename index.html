@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Visualization Tool</title>
+        <!-- Include the stylesheet -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css" />
+        <link rel="stylesheet" href="./src/app.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <h2 class="title">
+                Color Visualization Tool
+                <span style="margin-left: 12px;" class="material-icons toggle-dark">
+                    nights_stay
+                </span>
+            </h2>    
+        </div>
+        
+        <div class="main">
+            <label for="textarea">Simply type in your color(s) in hex, rgb, rgba, hsl, hsla or even mix-and-match all those:</label>
+            <textarea id="textarea" placeholder="E.g: #7A214A, hsl(197, 78%, 91%), ..."></textarea>
+        </div>
+
+
+        <div class="content">
+            <div class="grid" id="colorsGrid">
+                <!-- This will dynamically be populated with textarea typed colors. -->
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animationzs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+        <script src="dependencies/autosize.min.js"></script>
+        <script src="./src/app.js"></script>
+
+    </body>
+</html>
