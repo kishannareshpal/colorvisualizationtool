@@ -43,10 +43,6 @@ function setup() {
         const darkModeEnabled = event.matches;
         setDarkModeEnabled(darkModeEnabled);
     })
-
-
-    // faker data
-    textarea.value = `#832161, #f09ae9, #EA5B2E, #7B0828, #70F8BA, #F686BD, #BFEDC1, #7D1538, #B47AEA, #FAA381, #E63946, #634133, #F78764, #6E44FF, #0C8346, #CFB3CD, #CBBAED, #F4E9CD, #2667FF, #3D0B37, #92DCE5, #ECCFC3, #36382E, #F8F272, #C6AD94, #472D30`;
     
     // Check out our colors everytime the textarea's value changes.
     textarea.addEventListener('input', function () {
